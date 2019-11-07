@@ -1,0 +1,50 @@
+
+.App {
+  text-align: center;
+  color: black;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(99, 248, 79);
+  justify-content: flex-end;
+  padding: 0 20px;
+  margin: 0;
+}
+.option {
+  list-style: none;
+  padding: 15px;
+  border-left: 1.5px solid #E9EBEE;
+  
+
+}
+.option a, .option a:visited {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.sub-menu {
+  position: absolute;
+  display: none;
+  min-width: fit-content;
+  list-style: none;
+  text-align: left;
+  margin-top: 15px;
+  /* margin-left: -78px; */
+  border: 2px solid rgb(79, 248, 107);
+  padding: 0;
+  
+}
+.sub-menu a {
+  padding: 10px 15px;
+  border-bottom: 1.5px solid #E9EBEE;
+  display: block;
+  
+}
+.option:hover .sub-menu {
+  display: block;
+  color: black;
+}
+.option:hover, .option:active {
+  color: rgb(79, 248, 121);
+}
